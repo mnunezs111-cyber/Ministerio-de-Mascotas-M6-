@@ -1,0 +1,6 @@
+Notaciones
+
+kebab-case
+camelCase
+PascalCase
+snake_case
