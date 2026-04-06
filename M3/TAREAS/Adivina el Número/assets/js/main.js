@@ -1,7 +1,7 @@
 // Mensaje inicial
 window.alert("Para el conjunto de los enteros. Adivina el número del 1 al 10. Tienes 3 oportunidades");
 
-// Genera número aleatorio entre 1 y 10
+// Número aleatorio entre 1 y 10
 let numAzar = Math.floor(Math.random() * 10) + 1;
 
 // Lista para guardar los números 
