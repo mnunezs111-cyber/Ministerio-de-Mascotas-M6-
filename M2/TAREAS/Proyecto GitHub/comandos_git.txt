@@ -1,9 +1,33 @@
-git --version	
+//Muestra la versión instalada de Git en tu equipo.
 
 mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
+$ git --version
+git version 2.53.0.windows.2
+
+//Inicializa un repositorio en la carpeta actual (Se realiza git init una sola vez, por lo que no se volvío a realizar)
+
+git init
+
+//Agrega cambios al área de preparación (staging)	
+
+mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
+$ git add .
+
+//Registra los cambios en el repositorio con un mensaje descriptivo.
+
+mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
+$ git commit -m "Commit Tarea GitHub"
+[main 67e29f2] Commit Tarea GitHub
+ 2 files changed, 61 insertions(+)
+ create mode 100644 M2/TAREAS/Proyecto GitHub/comandos_git.txt
+ create mode 100644 M2/TAREAS/Proyecto GitHub/index.html
+
+ //Muestra el estado del repositorio (qué archivos están modificados, en staging, etc.).
+
+ mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
 $ git status
 On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
+Your branch is ahead of 'origin/main' by 2 commits.
   (use "git push" to publish your local commits)
 
 Changes not staged for commit:
@@ -16,35 +40,7 @@ Untracked files:
         ../Proyecto 4 copy/
         ../Proyecto 5.zip
         ../Proyecto 5/
-        ./
         ../../../M3/DIA 6/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
-$ git add.
-git: 'add.' is not a git command. See 'git --help'.
-
-The most similar command is
-        add
-
-mnune@MelissaHP MINGW64 ~/OneDrive/Documents/JAVASCRIPT/M2/TAREAS/Proyecto GitHub (main)
-$ git commit -m "Comit Proyecto Github"
-On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   ../../../M3/DIA5/EJ1/assets/js/main.js
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        ../Proyecto 4 copy/
-        ../Proyecto 5.zip
-        ../Proyecto 5/
-        ./
-        ../../../M3/DIA 6/
+        ../../../M3/TAREAS/
 
 no changes added to commit (use "git add" and/or "git commit -a")
