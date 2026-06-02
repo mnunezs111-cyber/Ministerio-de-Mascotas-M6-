@@ -1,0 +1,39 @@
+<h1 class="mb-4 text-primary">Registro Civil de Mascotas</h1>
+
+<table class="table table-striped table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>RUT Dueño</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each mascotas}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{nombre}}</td>
+        <td>{{rut}}</td>
+        <td>
+          <form action="/mascotas/eliminar" method="POST">
+            <input type="hidden" name="id" value="{{id}}">
+            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+          </form>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<h2 class="mt-5 mb-3"> Agregar Mascota</h2>
+<form action="/mascotas" method="POST" class="card p-3 shadow-sm col-md-4">
+  <div>
+    <input name="nombre" class="form-control mb-2" placeholder="Nombre mascota" required>
+  </div>
+  <div >
+    <input name="rut" class="form-control mb-2" placeholder="RUT dueño" required>
+  </div>
+  <button type="submit" class="btn btn-success ">Agregar</button>
+
+</form>
