@@ -1,1 +1,15 @@
+
+*.zip
+
+
 node_modules/
+
+
+M3/
+M4/
+M5/
+M7/
+M8/
+API BancoEstado/
+MiniShop/
+Servidor Películas/
